@@ -25,9 +25,20 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
   font-weight: 600;
+}
+
+.immortal-text {
+  color: darkred;
+}
+
+.secret-text {
+  color: black;
+}
+
+.mega-text, .colossal-text {
+  color: pink;
 }
 
 .container {
@@ -47,7 +58,7 @@ nav ul li a {
   border: 1px solid #ccc;
 }
 
-.pet-tier h2 {
+.pet-tier h2, .immortal-text, .secret-text, .mega-text, .colossal-text {
   margin-top: 20px;
 }
 
