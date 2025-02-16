@@ -3,25 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GENERIC PET GAME Value List</title>
+  <title>BUNNY VALUES - GENERIC PET GAME</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const links = document.querySelectorAll('nav a');
-      links.forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          target.scrollIntoView({ behavior: 'smooth' });
-        });
-      });
-    });
-  </script>
 </head>
 <body>
-  <header>
-    <h1>GENERIC PET GAME Value List</h1>
+  <header class="hero">
+    <h1>BUNNY VALUES</h1>
+    <p>Your #1 Value List for GENERIC PET GAME</p>
     <nav>
       <ul>
         <li><a href="#immortals">Immortals</a></li>
@@ -33,6 +22,11 @@
   </header>
 
   <main class="container">
+    <div class="search-sort">
+      <input type="text" placeholder="Search for a pet..." />
+      <select><option>Sort by Value</option><option>Sort by Name</option></select>
+    </div>
+
     <section id="immortals" class="pet-tier">
       <h2>Immortals</h2>
       <p>Immortal pets with their respective trade values...</p>
@@ -52,7 +46,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 GENERIC PET GAME Value List. All rights reserved.</p>
+    <p>&copy; 2025 BUNNY VALUES. All rights reserved.</p>
   </footer>
 </body>
 </html>
