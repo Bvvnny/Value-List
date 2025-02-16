@@ -1,14 +1,14 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #121212;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
   margin: 0;
   padding: 0;
-  color: #fff;
 }
 
-.hero {
-  background: linear-gradient(rgba(18,18,18,0.8), rgba(18,18,18,0.8)), url('background.jpg') center/cover;
-  padding: 40px 20px;
+.dark-header, .dark-footer {
+  background-color: #1a1a1a;
+  padding: 20px;
   text-align: center;
 }
 
@@ -16,47 +16,55 @@ body {
   width: 60px;
 }
 
-.search-bar input {
-  width: 60%;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  margin: 20px 0;
-  background-color: #333;
-  color: #fff;
-}
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 0;
+  gap: 25px;
 }
 
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  padding: 10px 15px;
+  color: #f0f0f0;
+}
+
+.hero {
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.search-input {
+  padding: 12px;
   border-radius: 8px;
+  border: none;
+  width: 60%;
+  margin-top: 20px;
 }
 
-.immortal-text { color: darkred; }
-.secret-text { color: black; }
-.mega-text, .colossal-text { color: pink; }
-
-.container {
-  background-color: #1e1e1e;
-  padding: 30px;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.pet-tier h2 { margin-top: 20px; }
+.immortal-text, .immortal h2 { color: darkred; }
+.secret-text, .secret h2 { color: black; }
+.mega-text, .mega h2, .colossal-text, .colossal h2 { color: pink; }
+
+.pet-tier {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+}
 
 footer {
-  text-align: center;
-  background-color: #1e1e1e;
-  padding: 10px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
