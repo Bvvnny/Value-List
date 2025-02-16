@@ -48,8 +48,19 @@ nav ul li a {
 }
 
 .pet-tier h2 {
-  color: #4b47ff;
   margin-top: 20px;
+}
+
+.immortal h2 {
+  color: darkred;
+}
+
+.secret h2 {
+  color: black;
+}
+
+.mega h2, .colossal h2 {
+  color: pink;
 }
 
 footer {
