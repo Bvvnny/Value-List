@@ -1,85 +1,62 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f2f5;
+  background-color: #121212;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
-header {
-  background-color: #4b47ff;
-  color: #fff;
-  padding: 20px;
+.hero {
+  background: linear-gradient(rgba(18,18,18,0.8), rgba(18,18,18,0.8)), url('background.jpg') center/cover;
+  padding: 40px 20px;
   text-align: center;
 }
 
 .logo img {
-  width: 50px;
+  width: 60px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin: 20px 0;
+  background-color: #333;
+  color: #fff;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  padding: 0;
 }
 
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
 }
 
-.immortal-text {
-  color: darkred;
-}
-
-.secret-text {
-  color: black;
-}
-
-.mega-text, .colossal-text {
-  color: pink;
-}
+.immortal-text { color: darkred; }
+.secret-text { color: black; }
+.mega-text, .colossal-text { color: pink; }
 
 .container {
-  max-width: 1200px;
+  background-color: #1e1e1e;
+  padding: 30px;
   margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
-.search-bar input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.pet-tier h2, .immortal-text, .secret-text, .mega-text, .colossal-text {
-  margin-top: 20px;
-}
-
-.immortal h2 {
-  color: darkred;
-}
-
-.secret h2 {
-  color: black;
-}
-
-.mega h2, .colossal h2 {
-  color: pink;
-}
+.pet-tier h2 { margin-top: 20px; }
 
 footer {
   text-align: center;
+  background-color: #1e1e1e;
   padding: 10px;
-  background-color: #4b47ff;
-  color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
 }
