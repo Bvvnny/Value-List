@@ -5,41 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BUNNY VALUES - Generic Pet Game</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
-    <img src="bunny-logo.png" alt="Bunny Values Logo" class="logo" />
-    <h1>BUNNY VALUES</h1>
-    <p>Your #1 Value List for GENERIC PET GAME</p>
-    <div class="buttons">
-      <button>GENERIC PET GAME</button>
-      <button>Pets Go</button>
+  <header>
+    <div class="logo">
+      <img src="bunny-logo.png" alt="Bunny Values Logo" />
+      <h1>BUNNY VALUES</h1>
     </div>
+    <p>Your #1 Value List for GENERIC PET GAME</p>
+    <nav>
+      <ul>
+        <li><a href="#immortals">Immortals</a></li>
+        <li><a href="#secrets">Secrets</a></li>
+        <li><a href="#megas">Megas</a></li>
+        <li><a href="#colossals">Colossals</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="navigation">
-    <ul>
-      <li><a href="#immortals">Immortals</a></li>
-      <li><a href="#secrets">Secrets</a></li>
-      <li><a href="#megas">Megas</a></li>
-      <li><a href="#colossals">Colossals</a></li>
-    </ul>
-  </nav>
+  <main class="container">
+    <div class="search-bar">
+      <input type="text" placeholder="Search for a pet..." />
+    </div>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Search for an item..." />
-  </div>
-
-  <main class="pet-list">
-    <section id="immortals"> ... Immortal pets content ... </section>
-    <section id="secrets"> ... Secret pets content ... </section>
-    <section id="megas"> ... Mega pets content ... </section>
-    <section id="colossals"> ... Colossal pets content ... </section>
+    <section id="immortals" class="pet-tier">
+      <h2>Immortals</h2>
+      <p>Immortal pets content...</p>
+    </section>
+    <section id="secrets" class="pet-tier">
+      <h2>Secrets</h2>
+      <p>Secret pets content...</p>
+    </section>
+    <section id="megas" class="pet-tier">
+      <h2>Megas</h2>
+      <p>Mega pets content...</p>
+    </section>
+    <section id="colossals" class="pet-tier">
+      <h2>Colossals</h2>
+      <p>Colossal pets content...</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Bunny Values. All rights reserved.</p>
+    <p>&copy; 2025 BUNNY VALUES. All rights reserved.</p>
   </footer>
 </body>
 </html>
