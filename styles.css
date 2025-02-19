@@ -1,191 +1,168 @@
 /* General Reset and Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0d0d0d;
-  color: #f0f0f0;
   margin: 0;
   padding: 0;
+  background-color: #0d0d0d;
+  color: #fff;
   overflow-x: hidden;
 }
 
-h1, h2 {
-  margin: 0;
-  color: #fff;
-}
-
-p {
-  color: #ccc;
-}
-
-/* Header Styling */
 .dark-header {
-  background-color: #1a1a1a;
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 15px;
+  backdrop-filter: blur(10px);
   text-align: center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
+.logo img {
+  width: 70px;
+  transition: all 0.3s ease;
 }
 
-.logo img {
-  width: 60px;
+.logo img:hover {
+  transform: rotate(360deg);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 10px 0;
+  gap: 30px;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: white;
   font-weight: 600;
-  color: #f0f0f0;
-  transition: color 0.3s;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffbf00; /* Highlight color on hover */
+  transform: scale(1.2);
+  color: #ffcc00;
 }
 
 /* Hero Section */
 .hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 60px 20px;
 }
 
-.hero-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.hero-heading {
+  font-size: 3em;
+  animation: typing 2s steps(40) 1s forwards;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .search-input {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  width: 100%;
-  max-width: 400px;
+  padding: 10px;
   margin-top: 20px;
-  background-color: #222;
-  color: #fff;
-  font-size: 16px;
+  border-radius: 5px;
+  width: 60%;
+  border: none;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffcc00;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  background-color: #ffdd66;
 }
 
 /* Trusted Section */
 .trusted {
-  background-color: #151515;
-  padding: 40px;
+  background-color: #222;
+  padding: 50px 20px;
   text-align: center;
-  border-radius: 10px;
-  margin: 20px auto;
-  width: 80%;
-}
-
-.trusted h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
 }
 
 .creator-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #222;
+  display: inline-block;
+  margin: 20px;
   padding: 15px;
+  background: #333;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  width: 250px;
-  margin: auto;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.creator-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
 .creator-card img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-right: 10px;
-}
-
-.creator-card p {
-  margin: 0;
-}
-
-/* Pet Tier Sections */
-section {
-  padding: 40px 20px;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.pet-card {
-  background-color: #222;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  text-align: center;
-}
-
-.pet-card img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.pet-card p {
-  margin: 5px 0;
+  margin-bottom: 15px;
 }
 
 /* Footer */
 .dark-footer {
-  background-color: #1a1a1a;
-  padding: 20px;
-  margin-top: 40px;
+  background: #222;
+  color: white;
+  padding: 15px 0;
   text-align: center;
 }
 
-footer p {
-  font-size: 14px;
-  color: #ccc;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
+.footer-icon {
+  font-size: 1.5em;
+  color: white;
+  transition: color 0.3s ease;
+}
 
-  .logo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero {
-    padding: 40px 20px;
-  }
-
-  .search-input {
-    width: 90%;
-  }
-
-  .trusted {
-    width: 90%;
-  }
-
-  .creator-card {
-    width: 80%;
-  }
+.footer-icon:hover {
+  color: #ffcc00;
 }
