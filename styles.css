@@ -3,14 +3,14 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: #121212; /* Dark background for dark mode */
+  color: #e0e0e0; /* Light text color for readability */
   overflow-x: hidden;
 }
 
 /* Header and Logo */
 .dark-header {
-  background: linear-gradient(135deg, #ffcc00, #ff3366);
+  background: linear-gradient(135deg, #6a0dad, #1e90ff); /* Gradient effect for vibrant purple to blue look */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -41,7 +41,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #e0e0e0;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1px;
@@ -50,13 +50,13 @@ nav ul li a {
 
 nav ul li a:hover {
   transform: scale(1.2);
-  color: #ffcc00;
-  text-shadow: 0 0 5px #fff, 0 0 10px #ffcc00;
+  color: #6a0dad;
+  text-shadow: 0 0 5px #e0e0e0, 0 0 10px #6a0dad;
 }
 
 /* New Update Button */
 .new-update-button {
-  background-color: #ffcc00;
+  background-color: #1e90ff;
   color: #333;
   padding: 10px 20px;
   border-radius: 5px;
@@ -65,9 +65,9 @@ nav ul li a:hover {
 }
 
 .new-update-button:hover {
-  background-color: #ffdd66;
+  background-color: #87cefa;
   transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.5);
 }
 
 /* Hero Section */
@@ -81,7 +81,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #e0e0e0;
 }
 
 .hero-overlay {
@@ -98,7 +98,7 @@ nav ul li a:hover {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 3px;
-  color: #ffcc00;
+  color: #1e90ff;
   margin-bottom: 10px;
   animation: typing 2.5s steps(50) 1s forwards;
   white-space: nowrap;
@@ -107,7 +107,7 @@ nav ul li a:hover {
 .hero-subheading {
   font-size: 1.5em;
   margin-bottom: 25px;
-  color: #ffdd66;
+  color: #87cefa;
 }
 
 @keyframes typing {
@@ -136,7 +136,7 @@ nav ul li a:hover {
 }
 
 .search-input:focus {
-  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
 }
 
 .cta-buttons {
@@ -148,25 +148,25 @@ nav ul li a:hover {
 
 .cta-button {
   padding: 15px 30px;
-  background-color: #ffcc00;
+  background-color: #6a0dad;
   border: none;
   border-radius: 8px;
-  color: #333;
+  color: #e0e0e0;
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #ffdd66;
+  background-color: #8a2be2;
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.5);
 }
 
 /* Footer */
 .dark-footer {
   background: #222;
-  color: white;
+  color: #e0e0e0;
   padding: 20px 0;
   text-align: center;
   margin-top: 40px;
