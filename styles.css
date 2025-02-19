@@ -3,24 +3,25 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0d0d0d;
+  background-color: #1e1e1e;
   color: #fff;
   overflow-x: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .dark-header {
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(135deg, #ffcc00, #ff3366);
   position: sticky;
   top: 0;
   z-index: 10;
   padding: 20px;
-  backdrop-filter: blur(10px);
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
 }
 
 .logo img {
-  width: 80px;
+  width: 100px;
   transition: all 0.3s ease;
 }
 
@@ -48,21 +49,22 @@ nav ul li a {
 nav ul li a:hover {
   transform: scale(1.2);
   color: #ffcc00;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ffcc00;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('hero-background.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('hero-background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  transition: background-color 0.3s ease;
 }
 
 .hero-overlay {
@@ -72,12 +74,14 @@ nav ul li a:hover {
   max-width: 800px;
   width: 80%;
   text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .hero-heading {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 3px;
+  color: #ffcc00;
   animation: typing 2.5s steps(50) 1s forwards;
   white-space: nowrap;
 }
@@ -100,6 +104,11 @@ nav ul li a:hover {
   background-color: #fff;
   color: #333;
   font-size: 1.1em;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
 }
 
 .cta-buttons {
@@ -123,6 +132,7 @@ nav ul li a:hover {
 .cta-button:hover {
   background-color: #ffdd66;
   transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
 }
 
 /* Footer */
@@ -131,4 +141,21 @@ nav ul li a:hover {
   color: white;
   padding: 20px 0;
   text-align: center;
+  margin-top: 40px;
+}
+
+.dark-footer p {
+  font-size: 16px;
+}
+
+/* Hover animations for footer links */
+.dark-footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark-footer a:hover {
+  color: #ffdd66;
+  text-decoration: underline;
 }
