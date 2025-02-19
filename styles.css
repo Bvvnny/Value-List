@@ -34,6 +34,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center; /* Align items vertically */
   gap: 30px;
   margin-top: 15px;
 }
@@ -51,6 +52,22 @@ nav ul li a:hover {
   transform: scale(1.2);
   color: #ffcc00;
   text-shadow: 0 0 5px #fff, 0 0 10px #ffcc00;
+}
+
+/* New Update Button */
+.new-update-button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.new-update-button:hover {
+  background-color: #ffdd66;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
 }
 
 /* Hero Section */
@@ -150,15 +167,8 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
-.dark-footer a {
-  color: #ffcc00;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.dark-footer a:hover {
-  color: #ffdd66;
-  text-decoration: underline;
+.dark-footer .social-media {
+  display: none; /* Hide social media links */
 }
 
 /* Media Queries for Mobile Responsiveness */
