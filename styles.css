@@ -9,17 +9,18 @@ body {
 }
 
 .dark-header {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 15px;
+  padding: 20px;
   backdrop-filter: blur(10px);
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .logo img {
-  width: 70px;
+  width: 80px;
   transition: all 0.3s ease;
 }
 
@@ -32,13 +33,15 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-top: 15px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 1px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -59,20 +62,23 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
 }
 
 .hero-overlay {
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 40px;
   border-radius: 15px;
   max-width: 800px;
-  margin: 0 auto;
-  color: white;
+  width: 80%;
+  text-align: center;
 }
 
 .hero-heading {
-  font-size: 3em;
-  animation: typing 2s steps(40) 1s forwards;
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  animation: typing 2.5s steps(50) 1s forwards;
   white-space: nowrap;
 }
 
@@ -86,13 +92,90 @@ nav ul li a:hover {
 }
 
 .search-input {
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-  width: 60%;
+  padding: 12px;
+  margin-top: 25px;
+  border-radius: 8px;
+  width: 70%;
   border: none;
   background-color: #fff;
   color: #333;
+  font-size: 1.1em;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffdd66;
+  transform: translateY(-5px);
+}
+
+/* Trusted Section */
+.trusted {
+  background-color: #222;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.creator-card {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.creator-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.creator-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.dark-footer {
+  background: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-icon {
+  font-size: 1.5em;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #ffcc00;
 }
 
 /* Scroll to Top Button */
@@ -112,57 +195,4 @@ nav ul li a:hover {
 .scroll-to-top:hover {
   transform: scale(1.1);
   background-color: #ffdd66;
-}
-
-/* Trusted Section */
-.trusted {
-  background-color: #222;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.creator-card {
-  display: inline-block;
-  margin: 20px;
-  padding: 15px;
-  background: #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.creator-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
-}
-
-.creator-card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-/* Footer */
-.dark-footer {
-  background: #222;
-  color: white;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.footer-icon {
-  font-size: 1.5em;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.footer-icon:hover {
-  color: #ffcc00;
 }
