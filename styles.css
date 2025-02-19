@@ -8,8 +8,9 @@ body {
   overflow-x: hidden;
 }
 
+/* Header and Logo */
 .dark-header {
-  background: linear-gradient(135deg, #ffcc00, #ff3366); /* Gradient effect for vibrant look */
+  background: linear-gradient(135deg, #ffcc00, #ff3366);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -28,6 +29,7 @@ body {
   transform: rotate(360deg);
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -79,7 +81,7 @@ nav ul li a:hover {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 3px;
-  color: #ffcc00; /* Bright yellow color */
+  color: #ffcc00;
   animation: typing 2.5s steps(50) 1s forwards;
   white-space: nowrap;
 }
@@ -93,6 +95,7 @@ nav ul li a:hover {
   }
 }
 
+/* Search Input */
 .search-input {
   padding: 12px;
   margin-top: 25px;
@@ -106,9 +109,10 @@ nav ul li a:hover {
 }
 
 .search-input:focus {
-  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7); /* Subtle glow effect when focused */
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
 }
 
+/* CTA Buttons */
 .cta-buttons {
   display: flex;
   gap: 20px;
@@ -129,8 +133,8 @@ nav ul li a:hover {
 
 .cta-button:hover {
   background-color: #ffdd66;
-  transform: translateY(-5px); /* Subtle lift effect */
-  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5); /* Glow effect */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
 }
 
 /* Footer */
@@ -155,4 +159,25 @@ nav ul li a:hover {
 .dark-footer a:hover {
   color: #ffdd66;
   text-decoration: underline;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 3em;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
