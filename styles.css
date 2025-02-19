@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #121212; /* Dark background for dark mode */
   color: #e0e0e0; /* Light text color for readability */
-  overflow-x: hidden;
+  overflow: hidden; /* Disable scrolling */
 }
 
 /* Header and Logo */
