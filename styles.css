@@ -4,13 +4,13 @@ body {
   color: #f0f0f0;
   margin: 0;
   padding: 0;
-  text-align: center;
-  overflow-x: hidden; /* Fix for horizontal scrolling */
+  overflow-x: hidden; /* Fix for side-scrolling */
 }
 
 .dark-header, .dark-footer {
   background-color: #1a1a1a;
   padding: 20px;
+  text-align: center;
 }
 
 .logo img {
@@ -22,7 +22,6 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 25px;
-  padding: 0;
 }
 
 nav ul li a {
@@ -32,91 +31,58 @@ nav ul li a {
 }
 
 .hero {
-  background-image: url('background.png');
-  background-size: cover;
-  background-position: center;
   text-align: center;
   padding: 60px 20px;
 }
 
-.trusted-by {
-  background-color: #121212;
-  padding: 40px 20px;
-  margin-top: 20px;
+.hero-image {
+  width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-.trusted-logos {
-  display: flex;
-  justify-content: center;
+.search-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 60%;
+  margin-top: 20px;
 }
 
-.creator {
-  background-color: #1e1e1e;
-  padding: 15px 25px;
-  border-radius: 15px;
+.trusted {
+  background-color: #151515;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.trusted h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.creator-card {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease-in-out;
-}
-
-.creator:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
-}
-
-.creator img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-/* PET CARDS */
-.pets-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.pet-card {
-  background-color: #1a1a1a;
+  background-color: #222;
   padding: 15px;
   border-radius: 10px;
-  width: 250px;
-  text-align: center;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  transition: transform 0.2s ease-in-out;
+  width: 250px;
+  margin: auto;
 }
 
-.pet-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+.creator-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-.pet-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-}
-
-.pet-name {
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.pet-value {
-  color: #ffcc00;
-  font-weight: 600;
-}
-
-.pet-rarity {
-  font-size: 0.9em;
-  color: #888;
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
