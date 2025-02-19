@@ -6,11 +6,10 @@ body {
   background-color: #1e1e1e;
   color: #fff;
   overflow-x: hidden;
-  transition: background-color 0.3s ease;
 }
 
 .dark-header {
-  background: linear-gradient(135deg, #ffcc00, #ff3366);
+  background: linear-gradient(135deg, #ffcc00, #ff3366); /* Gradient effect for vibrant look */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -21,7 +20,7 @@ body {
 }
 
 .logo img {
-  width: 100px;
+  width: 120px;
   transition: all 0.3s ease;
 }
 
@@ -64,7 +63,6 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   color: white;
-  transition: background-color 0.3s ease;
 }
 
 .hero-overlay {
@@ -81,7 +79,7 @@ nav ul li a:hover {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 3px;
-  color: #ffcc00;
+  color: #ffcc00; /* Bright yellow color */
   animation: typing 2.5s steps(50) 1s forwards;
   white-space: nowrap;
 }
@@ -108,7 +106,7 @@ nav ul li a:hover {
 }
 
 .search-input:focus {
-  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.7); /* Subtle glow effect when focused */
 }
 
 .cta-buttons {
@@ -131,8 +129,8 @@ nav ul li a:hover {
 
 .cta-button:hover {
   background-color: #ffdd66;
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5); /* Glow effect */
 }
 
 /* Footer */
@@ -148,7 +146,6 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
-/* Hover animations for footer links */
 .dark-footer a {
   color: #ffcc00;
   text-decoration: none;
