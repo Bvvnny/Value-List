@@ -1,3 +1,4 @@
+/* General Reset and Styling */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #0d0d0d;
@@ -7,7 +8,17 @@ body {
   overflow-x: hidden;
 }
 
-.dark-header, .dark-footer {
+h1, h2 {
+  margin: 0;
+  color: #fff;
+}
+
+p {
+  color: #ccc;
+}
+
+/* Header Styling */
+.dark-header {
   background-color: #1a1a1a;
   padding: 20px;
   text-align: center;
@@ -16,17 +27,12 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
-  text-align: left;
 }
 
 .logo img {
   width: 60px;
-}
-
-.logo h1 {
-  font-size: 2rem;
 }
 
 nav ul {
@@ -34,14 +40,21 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 25px;
+  padding: 10px 0;
 }
 
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
   color: #f0f0f0;
+  transition: color 0.3s;
 }
 
+nav ul li a:hover {
+  color: #ffbf00; /* Highlight color on hover */
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -61,8 +74,12 @@ nav ul li a {
   width: 100%;
   max-width: 400px;
   margin-top: 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
 }
 
+/* Trusted Section */
 .trusted {
   background-color: #151515;
   padding: 40px;
@@ -96,35 +113,11 @@ nav ul li a {
   margin-right: 10px;
 }
 
-footer {
-  background-color: #1a1a1a;
-  padding: 20px;
-  margin-top: 40px;
+.creator-card p {
+  margin: 0;
 }
 
-footer p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* Responsive navigation */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .logo {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .hero {
-    padding: 40px 20px;
-  }
-}
-
-/* Layout adjustments for pet sections */
+/* Pet Tier Sections */
 section {
   padding: 40px 20px;
 }
@@ -135,14 +128,64 @@ section h2 {
   margin-bottom: 20px;
 }
 
-.trusted {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.pet-card {
+  background-color: #222;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
-.creator-card {
-  flex: 1 1 200px;
-  margin: 10px;
+.pet-card img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.pet-card p {
+  margin: 5px 0;
+}
+
+/* Footer */
+.dark-footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+
+  .trusted {
+    width: 90%;
+  }
+
+  .creator-card {
+    width: 80%;
+  }
 }
