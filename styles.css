@@ -4,12 +4,12 @@ body {
   color: #f0f0f0;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .dark-header, .dark-footer {
   background-color: #1a1a1a;
   padding: 20px;
-  text-align: center;
 }
 
 .logo img {
@@ -30,65 +30,48 @@ nav ul li a {
 }
 
 .hero {
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  padding: 60px 20px;
+}
+
+.trusted-by {
+  background-color: #121212;
   padding: 40px 20px;
-}
-
-.search-input {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  width: 60%;
   margin-top: 20px;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.buttons button {
-  background-color: #333;
-  color: #f5f5f5;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 5px;
-}
-
-.content-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.pet-tier {
-  display: none;
-  background-color: #1a1a1a;
-  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-.pet-card {
-  background-color: #2a2a2a;
-  padding: 15px;
-  border-radius: 8px;
-  margin-top: 10px;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+.trusted-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.down {
-  color: red;
+.creator {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
 }
 
-.demand {
-  color: green;
+.creator:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
+.creator img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
