@@ -4,7 +4,7 @@ body {
   color: #f0f0f0;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Fix for side-scrolling */
+  overflow-x: hidden;
 }
 
 .dark-header, .dark-footer {
@@ -13,8 +13,20 @@ body {
   text-align: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  text-align: left;
+}
+
 .logo img {
   width: 60px;
+}
+
+.logo h1 {
+  font-size: 2rem;
 }
 
 nav ul {
@@ -36,7 +48,9 @@ nav ul li a {
 }
 
 .hero-image {
-  width: 300px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -44,7 +58,8 @@ nav ul li a {
   padding: 12px;
   border-radius: 8px;
   border: none;
-  width: 60%;
+  width: 100%;
+  max-width: 400px;
   margin-top: 20px;
 }
 
@@ -82,7 +97,52 @@ nav ul li a {
 }
 
 footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero {
+    padding: 40px 20px;
+  }
+}
+
+/* Layout adjustments for pet sections */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
   text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.trusted {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.creator-card {
+  flex: 1 1 200px;
+  margin: 10px;
 }
