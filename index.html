@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUNNY VALUES - Generic Pet Game</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="dark-header">
     <div class="logo">
-      <img src="bunny-logo.png" alt="Bunny Values Logo" />
+      <img src="bunny-logo.png" alt="Bunny Values Logo">
       <h1>BUNNY VALUES</h1>
       <p>Your #1 Value List for GENERIC PET GAME</p>
     </div>
     <nav>
       <ul>
-        <li><a href="#" class="nav-link" data-target="immortals">Immortals</a></li>
-        <li><a href="#" class="nav-link" data-target="secrets">Secrets</a></li>
-        <li><a href="#" class="nav-link" data-target="megas">Megas</a></li>
-        <li><a href="#" class="nav-link" data-target="colossals">Colossals</a></li>
+        <li><a href="#immortals" class="immortal-text">Immortals</a></li>
+        <li><a href="#secrets" class="secret-text">Secrets</a></li>
+        <li><a href="#megas" class="mega-text">Megas</a></li>
+        <li><a href="#colossals" class="colossal-text">Colossals</a></li>
       </ul>
     </nav>
   </header>
@@ -27,54 +27,25 @@
   <section class="hero">
     <h2>Welcome to Bunny Values</h2>
     <p>Your trusted source for accurate pet values in Generic Pet Game</p>
-    <input type="text" placeholder="Search for a pet..." class="search-input" />
-    <div class="buttons">
-      <button class="nav-button" data-target="immortals">Immortals</button>
-      <button class="nav-button" data-target="secrets">Secrets</button>
-      <button class="nav-button" data-target="megas">Megas</button>
-      <button class="nav-button" data-target="colossals">Colossals</button>
+    <div class="hero-buttons">
+      <button>Pet Simulator 99</button>
+      <button>Pets Go</button>
     </div>
   </section>
 
-  <main class="content-grid">
-    <section id="immortals" class="pet-tier">
-      <h2>Immortals</h2>
-      <div class="pet-card">
-        <p>Pet Name: Example Pet</p>
-        <p>Variant: Normal</p>
-        <p>Value: 2.05B <span class="down">▼ 2.4%</span></p>
-        <p>Demand: <span class="demand">7/10</span></p>
-        <p>Existence: 3841</p>
-        <p>Last updated: 1 day ago</p>
-      </div>
-    </section>
-    <section id="secrets" class="pet-tier">
-      <h2>Secrets</h2>
-      <p>Secret pets content...</p>
-    </section>
-    <section id="megas" class="pet-tier">
-      <h2>Megas</h2>
-      <p>Mega pets content...</p>
-    </section>
-    <section id="colossals" class="pet-tier">
-      <h2>Colossals</h2>
-      <p>Colossal pets content...</p>
-    </section>
-  </main>
+  <section class="trusted-by">
+    <h3>Trusted by all your favorite creators</h3>
+    <div class="trusted-logos">
+      <div class="creator"><img src="creator1.png" alt="FaZmash"> FaZmash</div>
+      <div class="creator"><img src="creator2.png" alt="BloxFamily"> BloxFamily</div>
+      <div class="creator"><img src="creator3.png" alt="NightFoxx"> NightFoxx</div>
+      <div class="creator"><img src="creator4.png" alt="Russo"> Russo</div>
+      <div class="creator"><img src="creator5.png" alt="Digito"> Digito</div>
+    </div>
+  </section>
 
   <footer class="dark-footer">
     <p>&copy; 2025 BUNNY VALUES. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.querySelectorAll('.nav-link, .nav-button').forEach(item => {
-      item.addEventListener('click', function() {
-        document.querySelectorAll('.pet-tier').forEach(section => {
-          section.style.display = 'none';
-        });
-        document.getElementById(this.dataset.target).style.display = 'block';
-      });
-    });
-  </script>
 </body>
 </html>
