@@ -176,22 +176,3 @@ nav ul li a:hover {
 .footer-icon:hover {
   color: #ffcc00;
 }
-
-/* Scroll to Top Button */
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #ffcc00;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 18px;
-  display: none;
-  cursor: pointer;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.scroll-to-top:hover {
-  transform: scale(1.1);
-  background-color: #ffdd66;
-}
