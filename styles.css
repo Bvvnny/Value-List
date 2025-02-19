@@ -125,54 +125,10 @@ nav ul li a:hover {
   transform: translateY(-5px);
 }
 
-/* Trusted Section */
-.trusted {
-  background-color: #222;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.creator-card {
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
-  background: #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.creator-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
-}
-
-.creator-card img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-
 /* Footer */
 .dark-footer {
   background: #222;
   color: white;
   padding: 20px 0;
   text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-.footer-icon {
-  font-size: 1.5em;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.footer-icon:hover {
-  color: #ffcc00;
 }
