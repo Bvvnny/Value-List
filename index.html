@@ -13,6 +13,33 @@
       overflow: hidden; /* Disable scrolling */
     }
   </style>
+  <script>
+    function validateForm() {
+      var name = document.forms["myForm"]["name"].value;
+      var email = document.forms["myForm"]["email"].value;
+      var errorMessage = "";
+
+      if (name == "") {
+        errorMessage += "Name must be filled out. ";
+      } else {
+        // Auto-correct name (e.g., capitalize the first letter)
+        document.forms["myForm"]["name"].value = name.charAt(0).toUpperCase() + name.slice(1);
+      }
+
+      if (email == "") {
+        errorMessage += "Email must be filled out.";
+      } else {
+        // Auto-correct email (e.g., remove spaces)
+        document.forms["myForm"]["email"].value = email.replace(/\s+/g, '');
+      }
+
+      if (errorMessage != "") {
+        alert(errorMessage);
+        return false;
+      }
+      return true;
+    }
+  </script>
 </head>
 <body>
   <header class="dark-header">
@@ -32,6 +59,11 @@
     <div class="hero-overlay">
       <h2 class="hero-heading">Discover the Latest in Pet Values</h2>
       <p class="hero-subheading">Your go-to source for accurate and up-to-date pet values</p>
+      <form name="myForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="name"><br><br>
+        Email: <input type="text" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
       <div class="cta-buttons">
         <button class="cta-button">Explore Values</button>
       </div>
