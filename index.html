@@ -17,16 +17,6 @@
       overflow: hidden; /* Disable scrolling */
     }
   </style>
-  <script>
-    function validateForm() {
-      var name = document.forms["myForm"]["name"].value;
-      if (name == "") {
-        alert("Name must be filled out.");
-        return false;
-      }
-      return true;
-    }
-  </script>
 </head>
 <body>
   <header class="dark-header">
@@ -46,10 +36,6 @@
     <div class="hero-overlay">
       <h2 class="hero-heading">Discover the Latest in Pet Values</h2>
       <p class="hero-subheading">Your go-to source for accurate and up-to-date pet values</p>
-      <form name="myForm" onsubmit="return validateForm()">
-        Name: <input type="text" name="name"><br><br>
-        <input type="submit" value="Submit">
-      </form>
       <div class="cta-buttons">
         <button class="cta-button">Explore Values</button>
       </div>
