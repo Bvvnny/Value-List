@@ -12,29 +12,16 @@
       scroll-behavior: smooth;
       overflow: hidden; /* Disable scrolling */
     }
+    body {
+      height: 100vh; /* Ensure body height fits the viewport */
+      overflow: hidden; /* Disable scrolling */
+    }
   </style>
   <script>
     function validateForm() {
       var name = document.forms["myForm"]["name"].value;
-      var email = document.forms["myForm"]["email"].value;
-      var errorMessage = "";
-
       if (name == "") {
-        errorMessage += "Name must be filled out. ";
-      } else {
-        // Auto-correct name (e.g., capitalize the first letter)
-        document.forms["myForm"]["name"].value = name.charAt(0).toUpperCase() + name.slice(1);
-      }
-
-      if (email == "") {
-        errorMessage += "Email must be filled out.";
-      } else {
-        // Auto-correct email (e.g., remove spaces)
-        document.forms["myForm"]["email"].value = email.replace(/\s+/g, '');
-      }
-
-      if (errorMessage != "") {
-        alert(errorMessage);
+        alert("Name must be filled out.");
         return false;
       }
       return true;
@@ -61,7 +48,6 @@
       <p class="hero-subheading">Your go-to source for accurate and up-to-date pet values</p>
       <form name="myForm" onsubmit="return validateForm()">
         Name: <input type="text" name="name"><br><br>
-        Email: <input type="text" name="email"><br><br>
         <input type="submit" value="Submit">
       </form>
       <div class="cta-buttons">
