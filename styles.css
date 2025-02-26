@@ -1,115 +1,100 @@
-/* General Styles */
+/* GENERAL STYLES */
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(135deg, #0e0320, #2b124a);
-    color: white;
+    background: linear-gradient(to bottom, #0a0f1d, #1b3a4b);
+    color: #d1f5ff;
     text-align: center;
 }
 
-/* Navigation Bar */
+/* NAVIGATION */
 nav {
+    background: rgba(10, 15, 29, 0.9);
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #00e6e6;
+    margin-left: 20px;
 }
 
-/* Hero Section */
+.nav-links a {
+    color: #d1f5ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00e6e6;
+}
+
+/* HERO SECTION */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 85vh;
-    padding: 20px;
+    padding: 150px 20px 50px;
 }
 
 .logo-container img {
-    width: 130px;
-    border-radius: 50%;
-    box-shadow: 0 0 25px rgba(255, 100, 255, 0.6);
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0px 0px 15px #00e6e6);
 }
 
 h1 {
-    font-size: 2.3em;
-    margin-top: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #ff6cff, #60d1ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    color: #d1f5ff;
 }
 
 .subtitle {
-    font-size: 1.1em;
-    opacity: 0.8;
+    font-size: 20px;
+    color: #b3e0ff;
 }
 
-/* Buttons */
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    margin: 12px;
-    font-size: 1em;
-    text-decoration: none;
-    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 18px;
     font-weight: 600;
-    transition: 0.3s ease-in-out;
-    background: none;
-    color: white;
-    border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #ff6cff, #60d1ff);
-    transition: transform 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.btn:hover::before {
-    transform: scaleX(1);
-}
-
-.btn:hover {
-    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.3s;
 }
 
 .btn-primary {
-    border: 2px solid #ff6cff;
+    background: #00e6e6;
+    color: #0a0f1d;
+    box-shadow: 0px 0px 15px #00e6e6;
+}
+
+.btn-primary:hover {
+    background: #00cccc;
+    box-shadow: 0px 0px 25px #00e6e6;
 }
 
 .btn-secondary {
-    border: 2px solid #60d1ff;
+    background: #66a3ff;
+    color: #0a0f1d;
+    box-shadow: 0px 0px 15px #66a3ff;
 }
 
-/* Subtle Glow Animation */
-@keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(255, 100, 255, 0.3); }
-    50% { box-shadow: 0 0 20px rgba(255, 100, 255, 0.7); }
-    100% { box-shadow: 0 0 10px rgba(255, 100, 255, 0.3); }
-}
-
-.logo-container img {
-    animation: glow 3s infinite alternate;
+.btn-secondary:hover {
+    background: #4d94ff;
+    box-shadow: 0px 0px 25px #66a3ff;
 }
