@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+/* General Styles */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle, #1a0b33, #0e061d);
+    background: linear-gradient(135deg, #15042b, #2b1055);
     color: white;
     text-align: center;
 }
@@ -13,14 +13,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 15px 50px;
     background: rgba(0, 0, 0, 0.2);
 }
 
-nav h1 {
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1px;
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav ul {
@@ -36,65 +35,65 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 400;
-    transition: 0.3s;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #9b6aff;
+    color: #d8b3ff;
 }
 
 /* Hero Section */
-.hero {
-    margin-top: 50px;
-}
-
-.logo-container {
+header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: 80vh;
+    padding: 20px;
 }
 
-.main-logo {
-    width: 150px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(155, 106, 255, 0.7);
+.hero-content {
+    max-width: 600px;
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-top: 15px;
+.logo-container img {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
 }
 
 .highlight {
-    color: #9b6aff;
+    color: #d8b3ff;
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: bold;
 }
 
-/* Glowing Buttons */
-.buttons {
-    margin-top: 20px;
-}
-
-.glow-button {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    background: #9b6aff;
-    padding: 10px 25px;
-    border-radius: 10px;
-    transition: 0.3s;
-    box-shadow: 0px 0px 10px rgba(155, 106, 255, 0.7);
+/* Buttons */
+.btn {
     display: inline-block;
+    padding: 12px 25px;
     margin: 10px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(216, 179, 255, 0.6);
+    background: linear-gradient(135deg, #a566ff, #6b23d1);
 }
 
-.glow-button:hover {
-    background: #bb86fc;
-    box-shadow: 0px 0px 20px rgba(187, 134, 252, 0.9);
+.btn:hover {
+    box-shadow: 0 0 20px rgba(216, 179, 255, 1);
+}
+
+.btn.secondary {
+    background: linear-gradient(135deg, #4e1d9d, #2b1055);
 }
