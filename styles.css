@@ -1,120 +1,55 @@
-/* GENERAL STYLES */
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1a0135, #36024e, #4a0273);
-    color: #ffffff;
+/* PET VALUES SECTION */
+.values-section {
+    padding: 150px 20px 50px;
     text-align: center;
 }
 
-/* NAVIGATION */
-nav {
-    background: rgba(15, 3, 40, 0.95);
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 20px rgba(170, 0, 255, 0.5);
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #c57bff;
-    text-shadow: 0px 0px 10px #a400ff;
-}
-
-.nav-links a {
-    color: #e0caff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ff99ff;
-    text-shadow: 0px 0px 10px #ff66ff;
-}
-
-/* HERO SECTION */
-header {
-    padding: 180px 20px 120px;
-}
-
-.hero-content {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    box-shadow: 0px 0px 40px rgba(255, 0, 255, 0.3);
-}
-
-.hero-logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 15px;
-    filter: drop-shadow(0px 0px 20px #ff00ff);
-}
-
-h1 {
-    font-size: 60px;
+.values-section h1 {
+    font-size: 48px;
     font-weight: 800;
     color: #ffffff;
     text-shadow: 0px 0px 20px #ff00ff;
+    margin-bottom: 30px;
 }
 
-.subtitle {
-    font-size: 24px;
-    color: #e0caff;
-    text-shadow: 0px 0px 10px #c57bff;
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* BUTTONS */
-.buttons {
-    margin-top: 30px;
+/* PET CARDS */
+.pet-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn {
-    padding: 16px 32px;
-    font-size: 20px;
+.pet-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.5);
+}
+
+.pet-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 15px #ff00ff);
+}
+
+.pet-card h2 {
+    font-size: 22px;
     font-weight: 700;
-    text-decoration: none;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 12px;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    color: #ff99ff;
 }
 
-.btn-primary {
-    background: #ff00ff;
-    color: #1a0135;
-    box-shadow: 0px 0px 25px #ff00ff;
-    border-color: #ff00ff;
-}
-
-.btn-primary:hover {
-    background: #cc00cc;
-    box-shadow: 0px 0px 35px #ff00ff;
-    transform: scale(1.08);
-}
-
-.btn-secondary {
-    background: #9b4dff;
-    color: #1a0135;
-    box-shadow: 0px 0px 25px #9b4dff;
-    border-color: #9b4dff;
-}
-
-.btn-secondary:hover {
-    background: #7d2eff;
-    box-shadow: 0px 0px 35px #9b4dff;
-    transform: scale(1.08);
+.pet-card p {
+    font-size: 18px;
+    color: #e0caff;
+    margin: 5px 0;
 }
