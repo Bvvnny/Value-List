@@ -1,15 +1,113 @@
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #1b003b, #29004e, #3f0080);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    background: rgba(20, 0, 50, 0.9);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(255, 0, 255, 0.5);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff00ff;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff99ff;
+}
+
+/* HERO SECTION */
+header {
+    padding: 160px 20px 100px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.4);
+}
+
+.hero-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 15px #ff00ff);
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: #ff99ff;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #ff00ff;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px #ff00ff;
+}
+
+.btn-primary:hover {
+    background: #cc00cc;
+    box-shadow: 0px 0px 30px #ff00ff;
+    transform: scale(1.05);
+}
+
 /* PET VALUES SECTION */
 .values-section {
     padding: 150px 20px 50px;
-    text-align: center;
 }
 
 .values-section h1 {
     font-size: 48px;
     font-weight: 800;
-    color: #ffffff;
     text-shadow: 0px 0px 20px #ff00ff;
-    margin-bottom: 30px;
 }
 
 .values-container {
@@ -22,34 +120,13 @@
 
 /* PET CARDS */
 .pet-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(40, 0, 60, 0.9);
     padding: 20px;
     border-radius: 15px;
-    text-align: center;
-    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pet-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.5);
-}
-
-.pet-card img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-    filter: drop-shadow(0px 0px 15px #ff00ff);
-}
-
-.pet-card h2 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #ff99ff;
-}
-
-.pet-card p {
-    font-size: 18px;
-    color: #e0caff;
-    margin: 5px 0;
 }
