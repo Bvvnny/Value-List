@@ -7,7 +7,112 @@ body {
     text-align: center;
 }
 
-/* Pet Values Section Styles */
+/* Navigation Styles */
+nav {
+    background: rgba(10, 15, 29, 0.9);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00e6e6;
+}
+
+.nav-links a {
+    color: #e0faff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00e6e6;
+}
+
+/* Hero Section */
+header {
+    padding: 150px 20px 100px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 230, 230, 0.2);
+}
+
+.hero-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 15px #00e6e6);
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #e0faff;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: #a3daff;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #00e6e6;
+    color: #0a0f1d;
+    box-shadow: 0px 0px 20px #00e6e6;
+}
+
+.btn-primary:hover {
+    background: #00cccc;
+    box-shadow: 0px 0px 30px #00e6e6;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: #4da3ff;
+    color: #0a0f1d;
+    box-shadow: 0px 0px 20px #4da3ff;
+}
+
+.btn-secondary:hover {
+    background: #338aff;
+    box-shadow: 0px 0px 30px #4da3ff;
+    transform: scale(1.05);
+}
+
+/* Pet Values Section */
 #pet-values {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
