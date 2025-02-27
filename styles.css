@@ -21,57 +21,105 @@ nav {
     box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
 }
 
-/* PET VALUES SECTION */
-.values-section {
-    padding: 120px 20px 50px;
+nav .nav-links a {
+    color: #e0faff;
+    text-decoration: none;
+    padding: 0 15px;
 }
 
-.values-section h1 {
+nav .nav-links a:hover {
+    color: #ff99ff;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10, 15, 29, 0.9);
+    padding-top: 60px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 15px #ff00ff);
+}
+
+.hero h1 {
     font-size: 48px;
-    font-weight: 800;
     color: #ffffff;
     text-shadow: 0px 0px 20px #ff00ff;
+}
+
+.hero p.subtitle {
+    font-size: 24px;
+    color: #ff99ff;
     margin-bottom: 30px;
 }
 
-/* PET CARDS */
-.values-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.hero .buttons {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
-.pet-card {
-    background: rgba(20, 20, 30, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.hero .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.pet-card:hover {
+.hero .btn-primary {
+    background: #ff00ff;
+}
+
+.hero .btn-primary:hover {
+    background: #e600e6;
     transform: scale(1.05);
-    box-shadow: 0px 0px 40px rgba(255, 0, 255, 0.9);
 }
 
-.pet-card img {
+.hero .btn-secondary {
+    background: #004466;
+}
+
+.hero .btn-secondary:hover {
+    background: #00334d;
+    transform: scale(1.05);
+}
+
+/* TRUSTED BY SECTION */
+.trusted-section {
+    padding: 60px 20px;
+    background: rgba(20, 30, 40, 0.9);
+}
+
+.trusted-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.trusted-person img {
     width: 100px;
     height: auto;
+    border-radius: 50%;
     margin-bottom: 10px;
     filter: drop-shadow(0px 0px 15px #ff00ff);
 }
 
-.pet-card h2 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.pet-card p {
+.trusted-person p {
+    color: #e0faff;
     font-size: 18px;
-    color: #ff99ff;
-    margin: 5px 0;
 }
