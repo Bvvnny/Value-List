@@ -21,10 +21,15 @@ nav {
     box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
 }
 
-nav .logo {
+nav .logo a {
     font-size: 24px;
     font-weight: bold;
     color: #e0faff;
+    text-decoration: none;
+}
+
+nav .logo a:hover {
+    color: #ff99ff;
 }
 
 nav .nav-links {
@@ -45,7 +50,7 @@ nav .nav-links a:hover {
 
 /* HERO SECTION */
 .hero {
-    height: 80vh;
+    height: 60vh; /* Reduced height to fit content without scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,80 +63,13 @@ nav .nav-links a:hover {
 }
 
 .hero-logo {
-    width: 150px;
+    width: 120px; /* Adjusted size for better fit */
     height: auto;
     margin-bottom: 20px;
     filter: drop-shadow(0px 0px 15px #ff00ff);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 36px; /* Adjusted font size for better fit */
     color: #ffffff;
-    text-shadow: 0px 0px 20px #ff00ff;
-}
-
-.hero p.subtitle {
-    font-size: 24px;
-    color: #ff99ff;
-    margin-bottom: 30px;
-}
-
-.hero .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.hero .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ffffff;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.hero .btn-primary {
-    background: #ff00ff;
-}
-
-.hero .btn-primary:hover {
-    background: #e600e6;
-    transform: scale(1.05);
-}
-
-.hero .btn-secondary {
-    background: #004466;
-}
-
-.hero .btn-secondary:hover {
-    background: #00334d;
-    transform: scale(1.05);
-}
-
-/* TRUSTED BY SECTION */
-.trusted-section {
-    padding: 60px 20px;
-    background: rgba(20, 30, 40, 0.9);
-}
-
-.trusted-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.trusted-person img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    filter: drop-shadow(0px 0px 15px #ff00ff);
-}
-
-.trusted-person p {
-    color: #e0faff;
-    font-size: 18px;
-}
+    text-shadow: 0px 0px 20px
