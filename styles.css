@@ -1,15 +1,15 @@
-/* Same styles.css for both pages */
+/* GENERAL STYLES */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #0a0f1d, #002b5e, #004466);
-    color: #e0faff;
+    background: linear-gradient(135deg, #1a0135, #36024e, #4a0273);
+    color: #ffffff;
     text-align: center;
 }
 
-/* Navigation Styles */
+/* NAVIGATION */
 nav {
-    background: rgba(10, 15, 29, 0.9);
+    background: rgba(15, 3, 40, 0.95);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -18,147 +18,103 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
+    box-shadow: 0px 4px 20px rgba(170, 0, 255, 0.5);
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
-    color: #00e6e6;
+    color: #c57bff;
+    text-shadow: 0px 0px 10px #a400ff;
 }
 
 .nav-links a {
-    color: #e0faff;
+    color: #e0caff;
     text-decoration: none;
     margin: 0 20px;
     font-size: 18px;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #00e6e6;
+    color: #ff99ff;
+    text-shadow: 0px 0px 10px #ff66ff;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 header {
-    padding: 150px 20px 100px;
+    padding: 180px 20px 120px;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    box-shadow: 0px 0px 30px rgba(0, 230, 230, 0.2);
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(255, 0, 255, 0.3);
 }
 
 .hero-logo {
-    width: 120px;
+    width: 150px;
     height: auto;
-    margin-bottom: 10px;
-    filter: drop-shadow(0px 0px 15px #00e6e6);
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 0px 20px #ff00ff);
 }
 
 h1 {
-    font-size: 52px;
-    font-weight: 700;
-    color: #e0faff;
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #ff00ff;
 }
 
 .subtitle {
-    font-size: 22px;
-    color: #a3daff;
+    font-size: 24px;
+    color: #e0caff;
+    text-shadow: 0px 0px 10px #c57bff;
 }
 
-/* Buttons */
+/* BUTTONS */
 .buttons {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .btn {
-    padding: 14px 28px;
-    font-size: 18px;
-    font-weight: 600;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     display: inline-block;
-    margin: 10px;
+    margin: 12px;
     transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .btn-primary {
-    background: #00e6e6;
-    color: #0a0f1d;
-    box-shadow: 0px 0px 20px #00e6e6;
+    background: #ff00ff;
+    color: #1a0135;
+    box-shadow: 0px 0px 25px #ff00ff;
+    border-color: #ff00ff;
 }
 
 .btn-primary:hover {
-    background: #00cccc;
-    box-shadow: 0px 0px 30px #00e6e6;
-    transform: scale(1.05);
+    background: #cc00cc;
+    box-shadow: 0px 0px 35px #ff00ff;
+    transform: scale(1.08);
 }
 
 .btn-secondary {
-    background: #4da3ff;
-    color: #0a0f1d;
-    box-shadow: 0px 0px 20px #4da3ff;
+    background: #9b4dff;
+    color: #1a0135;
+    box-shadow: 0px 0px 25px #9b4dff;
+    border-color: #9b4dff;
 }
 
 .btn-secondary:hover {
-    background: #338aff;
-    box-shadow: 0px 0px 30px #4da3ff;
-    transform: scale(1.05);
-}
-
-/* Pet Values Section */
-#pet-values {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 50px 20px;
-    margin-top: 100px;
-}
-
-.value-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0px 0px 20px rgba(0, 230, 230, 0.3);
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.value-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 30px rgba(0, 230, 230, 0.4);
-}
-
-.pet-icon {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.pet-info {
-    color: #e0faff;
-}
-
-.pet-name {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.pet-value, .pet-demand, .pet-update {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.pet-value span, .pet-demand span, .pet-update span {
-    font-weight: 700;
-    color: #00e6e6;
+    background: #7d2eff;
+    box-shadow: 0px 0px 35px #9b4dff;
+    transform: scale(1.08);
 }
