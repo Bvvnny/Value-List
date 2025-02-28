@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #0a0f1d, #1c2a48, #2f3d5b);
-    color: #ffffff;
+    background: linear-gradient(to bottom right, #f0f4f8, #c0d5e8); /* Soft gradient background */
+    color: #333333; /* Darker text color for readability */
     text-align: center;
 }
 
 /* NEW NAVIGATION BAR */
 nav {
-    background: rgba(15, 20, 40, 0.95);
+    background: rgba(255, 255, 255, 0.95); /* Light background for nav */
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -19,37 +19,30 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 12px rgba(0, 255, 255, 0.3);
-}
-
-.nav-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
 
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color: #007BFF; /* Primary blue color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .logo a:hover {
-    color: #00eaff;
+    color: #0056b3; /* Darker blue on hover */
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #333333; /* Dark text color */
     margin-left: 20px;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #00eaff;
+    color: #007BFF; /* Primary blue on hover */
 }
 
 /* HERO SECTION */
@@ -58,7 +51,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #111a33, #192b50, #223a66);
+    background: linear-gradient(to bottom right, #0066cc, #66ccff); /* Gradient for hero section */
     padding-top: 80px;
 }
 
@@ -70,13 +63,13 @@ nav {
     width: 140px;
     height: auto;
     margin-bottom: 20px;
-    filter: drop-shadow(0px 0px 15px #00ffff);
+    filter: drop-shadow(0px 0px 15px #33ccff); /* Bright glow effect */
 }
 
 .hero h1 {
     font-size: 40px;
-    color: #ffffff;
-    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+    color: #ffffff; /* White text for contrast */
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 
 .subtitle {
@@ -100,27 +93,29 @@ nav {
     font-weight: bold;
     display: inline-block;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Custom shadow */
 }
 
+/* Primary button with new color */
 .btn-primary {
-    background: #00eaff;
-    color: #001122;
+    background: #007BFF; /* Bright blue */
+    color: white;
 }
 
 .btn-primary:hover {
-    background: #0099cc;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    background: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* Glow effect */
 }
 
+/* Secondary button with new color */
 .btn-secondary {
-    background: #ff44aa;
+    background: #ff6f61; /* Coral color */
     color: white;
 }
 
 .btn-secondary:hover {
-    background: #cc0066;
-    box-shadow: 0 0 20px rgba(255, 68, 170, 0.7);
+    background: #e65c50; /* Darker coral on hover */
+    box-shadow: 0 0 20px rgba(255, 111, 97, 0.7); /* Glow effect */
 }
 
 /* PET CARDS */
@@ -136,19 +131,19 @@ nav {
 }
 
 .pet-card {
-    background: #182b4c;
+    background: #ffffff; /* White background for cards */
     border-radius: 12px;
     padding: 20px;
     text-align: center;
     width: 100%; /* Makes it responsive */
     max-width: 250px; /* Limits max width */
-    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 .pet-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 255, 255, 0.5);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
 
 .pet-card img {
@@ -160,7 +155,7 @@ nav {
 
 .pet-card h2 {
     font-size: 20px;
-    color: #ffffff;
+    color: #333333; /* Darker text for card titles */
     margin-bottom: 8px;
 }
 
