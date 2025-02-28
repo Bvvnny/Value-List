@@ -1,16 +1,17 @@
 /* GENERAL STYLES */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #0a0f1d, #003366, #005599);
+    background: linear-gradient(to bottom, #0a0f1d, #1c2a48, #2f3d5b);
     color: #ffffff;
     text-align: center;
 }
 
-/* NAVIGATION */
+/* NEW NAVIGATION BAR */
 nav {
-    background: rgba(10, 15, 29, 0.95);
-    padding: 15px 30px;
+    background: rgba(15, 20, 40, 0.95);
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,30 +19,26 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
+    box-shadow: 0px 4px 12px rgba(0, 255, 255, 0.3);
 }
 
-nav .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav .nav-links {
+.nav-container {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav .nav-links a {
-    color: #e0faff;
+.logo a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 18px;
+    transition: 0.3s;
 }
 
-nav .nav-links a:hover {
-    color: #ff99ff;
+.logo a:hover {
+    color: #00eaff;
 }
 
 /* HERO SECTION */
@@ -50,10 +47,8 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to bottom right, #0a0f1d, #002b5e);
-    padding: 20px;
-    margin-top: 60px;
+    background: linear-gradient(to bottom, #111a33, #192b50, #223a66);
+    padding-top: 80px;
 }
 
 .hero-content {
@@ -61,73 +56,64 @@ nav .nav-links a:hover {
 }
 
 .hero-logo {
-    width: 150px;
+    width: 140px;
     height: auto;
     margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 15px #00ffff);
 }
 
 .hero h1 {
     font-size: 40px;
     color: #ffffff;
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
 }
 
 .subtitle {
     font-size: 18px;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
+/* BUTTONS */
 .buttons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
 .btn {
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
     font-size: 16px;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
 }
 
 .btn-primary {
-    background: #ff99ff;
-    color: white;
+    background: #00eaff;
+    color: #001122;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
 }
 
 .btn-primary:hover {
-    background: #ff66ff;
+    background: #0099cc;
 }
 
 .btn-secondary {
-    background: #0077ff;
+    background: #ff44aa;
     color: white;
+    box-shadow: 0px 4px 10px rgba(255, 68, 170, 0.5);
 }
 
 .btn-secondary:hover {
-    background: #0055cc;
+    background: #cc0066;
 }
 
-/* TRUSTED SECTION */
-.trusted-section {
-    padding: 50px;
-}
-
-.trusted-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.trusted-person img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-/* PET VALUE SECTION */
+/* PET CARDS */
 .values-section {
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .values-container {
@@ -138,12 +124,12 @@ nav .nav-links a:hover {
 }
 
 .pet-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
+    background: #182b4c;
+    border-radius: 12px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
+    width: 250px;
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -152,48 +138,35 @@ nav .nav-links a:hover {
 }
 
 .pet-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .pet-card h2 {
-    margin: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 8px;
 }
 
-.variant {
-    color: #cccccc;
+.pet-card p {
+    font-size: 16px;
+    margin: 4px 0;
 }
 
-.value {
-    color: #ff4444;
-}
-
-.value-change {
-    color: #ff4444;
-    font-weight: bold;
-}
-
-.demand-score {
-    color: #00ff99;
-    font-weight: bold;
-}
-
-/* MOBILE STYLES */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
     .hero h1 {
         font-size: 30px;
     }
-
-    .buttons {
-        flex-direction: column;
+    
+    .btn {
+        padding: 10px 16px;
+        font-size: 14px;
     }
-
+    
     .values-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
