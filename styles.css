@@ -1,21 +1,15 @@
 /* GENERAL STYLES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    background: linear-gradient(to bottom right, #0c0f26, #1a2a52);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #0a0f1d, #003366, #005599);
     color: #ffffff;
     text-align: center;
-    padding-top: 60px;
 }
 
 /* NAVIGATION */
 nav {
-    background: rgba(15, 20, 50, 0.95);
+    background: rgba(10, 15, 29, 0.95);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -24,7 +18,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(50, 150, 255, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
 }
 
 nav .logo a {
@@ -34,8 +28,20 @@ nav .logo a {
     text-decoration: none;
 }
 
-nav .logo a:hover {
-    color: #66ccff;
+nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links a {
+    color: #e0faff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+nav .nav-links a:hover {
+    color: #ff99ff;
 }
 
 /* HERO SECTION */
@@ -45,22 +51,24 @@ nav .logo a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: radial-gradient(circle, #1b2b4b, #0c0f26);
-    text-align: center;
+    background: linear-gradient(to bottom right, #0a0f1d, #002b5e);
     padding: 20px;
+    margin-top: 60px;
+}
+
+.hero-content {
+    text-align: center;
 }
 
 .hero-logo {
-    width: 140px;
+    width: 150px;
     height: auto;
     margin-bottom: 20px;
-    filter: drop-shadow(0px 0px 20px rgba(100, 200, 255, 0.7));
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 40px;
     color: #ffffff;
-    text-shadow: 0px 0px 10px rgba(100, 200, 255, 0.7);
 }
 
 .subtitle {
@@ -68,119 +76,124 @@ nav .logo a:hover {
     margin-bottom: 20px;
 }
 
-.buttons a {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    border-radius: 8px;
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background: #66ccff;
-    color: #0c0f26;
-    box-shadow: 0px 0px 10px rgba(100, 200, 255, 0.8);
+    background: #ff99ff;
+    color: white;
 }
 
 .btn-primary:hover {
-    background: #3399ff;
+    background: #ff66ff;
 }
 
 .btn-secondary {
-    background: #444b69;
-    color: #ffffff;
+    background: #0077ff;
+    color: white;
 }
 
 .btn-secondary:hover {
-    background: #3a4262;
+    background: #0055cc;
 }
 
-/* PET VALUE SECTION */
-.values-section {
-    padding: 40px;
+/* TRUSTED SECTION */
+.trusted-section {
+    padding: 50px;
 }
 
-.values-container {
+.trusted-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-/* PET CARDS */
+.trusted-person img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* PET VALUE SECTION */
+.values-section {
+    padding: 50px;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
 .pet-card {
-    background: #101a40;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
     padding: 15px;
+    border-radius: 10px;
     width: 250px;
     text-align: center;
-    box-shadow: 0px 4px 12px rgba(50, 150, 255, 0.2);
-    transition: transform 0.2s ease-in-out;
-    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
 .pet-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 .pet-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
 .pet-card h2 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-.pet-card p {
-    font-size: 16px;
-    color: #cbd9ff;
+.variant {
+    color: #cccccc;
 }
 
-.pet-card .value {
-    font-size: 18px;
+.value {
+    color: #ff4444;
+}
+
+.value-change {
+    color: #ff4444;
     font-weight: bold;
-    color: #66ccff;
-    margin-top: 5px;
 }
 
-.pet-card .value.decrease {
-    color: #ff6666;
-}
-
-.pet-card .value.increase {
-    color: #66ff99;
-}
-
-.pet-card .demand {
-    font-size: 16px;
+.demand-score {
+    color: #00ff99;
     font-weight: bold;
-    color: #ffffff;
 }
 
-/* RESPONSIVE DESIGN */
+/* MOBILE STYLES */
 @media (max-width: 768px) {
-    .hero {
-        height: 60vh;
+    .nav-links {
+        display: none;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
-    .buttons a {
-        font-size: 16px;
-        padding: 10px 20px;
+    .buttons {
+        flex-direction: column;
     }
 
     .values-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 }
