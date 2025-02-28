@@ -11,7 +11,7 @@ body {
 /* NAVIGATION BAR */
 nav {
     background: rgba(255, 255, 255, 0.9);
-    padding: 15px 30px; /* Increased padding */
+    padding: 15px 30px; /* Adequate padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,20 +25,21 @@ nav {
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #007BFF;
+    color: #007BFF; /* Primary blue color */
 }
 
 .nav-links {
     display: flex;
-    align-items: center;
+    align-items: center; /* Center items vertically */
 }
 
 .nav-links a {
-    color: #007BFF; /* Set text color to match branding */
-    margin: 0 20px; /* Equal margin for spacing */
+    color: #007BFF; /* Set text color */
+    margin: 0 20px; /* Equal spacing */
     text-decoration: none;
     padding: 10px; /* Better clickable area */
     transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .nav-links a:hover {
@@ -94,21 +95,63 @@ nav {
 }
 
 .btn-primary {
-    background: #007BFF;
+    background: #007BFF; /* Bright blue */
     color: white;
 }
 
 .btn-primary:hover {
-    background: #0056b3;
+    background: #0056b3; /* Darker blue on hover */
 }
 
 .btn-secondary {
-    background: #FF4081;
+    background: #FF4081; /* Coral color */
     color: white;
 }
 
 .btn-secondary:hover {
-    background: #e91e63;
+    background: #e91e63; /* Darker coral on hover */
+}
+
+/* PET VALUES SECTION */
+.values-section {
+    padding: 50px 20px;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.pet-card {
+    background: #ffffff; /* White background for cards */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.pet-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.pet-card h2 {
+    font-size: 20px;
+    color: #333333; /* Darker text for card titles */
+}
+
+.pet-card p {
+    font-size: 16px;
+    margin: 4px 0;
 }
 
 /* TRUSTED SECTION */
