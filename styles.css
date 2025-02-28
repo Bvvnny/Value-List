@@ -34,11 +34,17 @@ nav {
     color: #0056b3; /* Darker blue on hover */
 }
 
+.nav-links {
+    display: flex; /* Use flexbox for navigation links */
+    align-items: center; /* Center links vertically */
+}
+
 .nav-links a {
     color: #333333; /* Dark text color */
     margin-left: 20px;
     text-decoration: none;
     transition: color 0.3s;
+    white-space: nowrap; /* Prevents line breaks */
 }
 
 .nav-links a:hover {
