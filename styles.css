@@ -1,155 +1,186 @@
 /* GENERAL STYLES */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #001F3F, #005f73, #0a9396);
+}
+
+body {
+    background: linear-gradient(to bottom right, #0c0f26, #1a2a52);
     color: #ffffff;
     text-align: center;
+    padding-top: 60px;
 }
 
 /* NAVIGATION */
 nav {
-    background: rgba(0, 31, 63, 0.9);
+    background: rgba(15, 20, 50, 0.95);
     padding: 15px 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.3);
+    box-shadow: 0px 4px 10px rgba(50, 150, 255, 0.3);
 }
 
 nav .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #e0faff;
+    color: #ffffff;
     text-decoration: none;
+}
+
+nav .logo a:hover {
+    color: #66ccff;
 }
 
 /* HERO SECTION */
 .hero {
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #002B5E, #0a9396);
-    padding-top: 60px;
-}
-
-.hero-content {
+    flex-direction: column;
+    background: radial-gradient(circle, #1b2b4b, #0c0f26);
     text-align: center;
+    padding: 20px;
 }
 
 .hero-logo {
-    width: 120px;
+    width: 140px;
     height: auto;
     margin-bottom: 20px;
-    filter: drop-shadow(0px 0px 15px #ff00ff);
+    filter: drop-shadow(0px 0px 20px rgba(100, 200, 255, 0.7));
 }
 
 .hero h1 {
     font-size: 42px;
     color: #ffffff;
-    text-shadow: 0px 0px 20px #00cfcf;
+    text-shadow: 0px 0px 10px rgba(100, 200, 255, 0.7);
 }
 
 .subtitle {
     font-size: 18px;
-    color: #d4faff;
     margin-bottom: 20px;
 }
 
-/* BUTTONS */
-.btn {
+.buttons a {
     display: inline-block;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-size: 18px;
-    text-decoration: none;
+    padding: 12px 24px;
     margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
 .btn-primary {
-    background: #0096c7;
-    color: white;
+    background: #66ccff;
+    color: #0c0f26;
+    box-shadow: 0px 0px 10px rgba(100, 200, 255, 0.8);
+}
+
+.btn-primary:hover {
+    background: #3399ff;
 }
 
 .btn-secondary {
-    background: #ff0054;
-    color: white;
+    background: #444b69;
+    color: #ffffff;
 }
 
-.btn:hover {
-    opacity: 0.8;
+.btn-secondary:hover {
+    background: #3a4262;
 }
 
-/* PET VALUES */
+/* PET VALUE SECTION */
 .values-section {
-    padding: 40px 20px;
+    padding: 40px;
 }
 
 .values-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
+/* PET CARDS */
 .pet-card {
-    background: #014f86;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
+    background: #101a40;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(50, 150, 255, 0.2);
+    transition: transform 0.2s ease-in-out;
+    position: relative;
 }
 
 .pet-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
 .pet-card img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
 .pet-card h2 {
     font-size: 20px;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .pet-card p {
     font-size: 16px;
-    color: #e0faff;
+    color: #cbd9ff;
 }
 
-/* TRUSTED SECTION */
-.trusted-section {
-    padding: 40px;
-    background: #005f73;
-    border-radius: 15px;
-    margin: 40px;
+.pet-card .value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #66ccff;
+    margin-top: 5px;
 }
 
-.trusted-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.pet-card .value.decrease {
+    color: #ff6666;
 }
 
-.trusted-person {
-    text-align: center;
+.pet-card .value.increase {
+    color: #66ff99;
 }
 
-.trusted-person img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.trusted-person p {
+.pet-card .demand {
     font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .buttons a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
