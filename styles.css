@@ -3,15 +3,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); /* Soft gradient background */
-    color: #333333; /* Darker text color for readability */
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+    color: #333333;
     text-align: center;
 }
 
 /* NAVIGATION BAR */
 nav {
-    background: rgba(255, 255, 255, 0.9); /* Light background for nav */
-    padding: 15px 40px; /* Increased padding for more space */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px; /* Increased padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,32 +19,31 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #007BFF; /* Primary blue color */
+    color: #007BFF;
 }
 
 .nav-links {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 .nav-links a {
-    color: #333333; /* Dark text color */
-    margin: 0 20px; /* Equal margin on both sides */
+    color: #007BFF; /* Set text color to match branding */
+    margin: 0 20px; /* Equal margin for spacing */
     text-decoration: none;
-    padding: 10px 15px; /* Added padding for better spacing */
+    padding: 10px; /* Better clickable area */
     transition: background-color 0.3s, color 0.3s;
-    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .nav-links a:hover {
     background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
-    color: #007BFF; /* Change text color on hover */
+    color: #0056b3; /* Darker blue on hover */
 }
 
 /* HERO SECTION */
@@ -53,7 +52,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #007BFF, #00BCD4); /* Gradient for hero section */
+    background: linear-gradient(to bottom right, #007BFF, #00BCD4);
     color: white;
     padding-top: 80px;
 }
@@ -95,21 +94,21 @@ nav {
 }
 
 .btn-primary {
-    background: #007BFF; /* Bright blue */
+    background: #007BFF;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #0056b3; /* Darker blue on hover */
+    background: #0056b3;
 }
 
 .btn-secondary {
-    background: #FF4081; /* Coral color */
+    background: #FF4081;
     color: white;
 }
 
 .btn-secondary:hover {
-    background: #e91e63; /* Darker coral on hover */
+    background: #e91e63;
 }
 
 /* TRUSTED SECTION */
